@@ -8,3 +8,5 @@ In terminal:
 
 ```bash
 pip freeze > requirements.txt
+
+selenium~=4.31.0

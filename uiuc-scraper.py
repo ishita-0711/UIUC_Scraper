@@ -29,3 +29,11 @@ for block in products:
         print()
     except Exception as e:
         print("Error:", e)
+
+
+#Refactoring code to use UIUC_API instead of selenium
+
+#get course number, name, credits and description
+def getCourse(courseName, year=None, quarter=None, redirect=False):
+    course = ua.get_course(courseName, year, quarter, redirect)
+    return course.number, course.name, course.hours, course.description
