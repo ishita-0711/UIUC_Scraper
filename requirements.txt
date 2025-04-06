@@ -1,0 +1,10 @@
+
+
+---
+
+### 🔹 **STEP 3: Create `requirements.txt`**
+
+In terminal:
+
+```bash
+pip freeze > requirements.txt
